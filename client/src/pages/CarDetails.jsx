@@ -5,7 +5,7 @@ const CarDetails = () => {
 
     return (
         <div>
-
+            
         </div>
     )
 }
