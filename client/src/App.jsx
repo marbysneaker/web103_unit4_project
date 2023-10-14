@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRoutes } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import ViewCars from './pages/ViewCars'
 import EditCar from './pages/EditCar'
 import CreateCar from './pages/CreateCar'
 import CarDetails from './pages/CarDetails'
+import CarsAPI from './services/CarsAPI'
 import './App.css'
 
 const App = () => {
@@ -26,6 +27,9 @@ const App = () => {
       element: <EditCar title='BOLT BUCKET | Edit' />
     }
   ])
+
+  
+
 
   return (
     <div className='app'>
